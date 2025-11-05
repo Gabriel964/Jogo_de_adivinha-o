@@ -1,0 +1,1 @@
+Jogo_de_adivinhação0
