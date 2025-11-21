@@ -8,12 +8,13 @@
 
 /* Aqui padronizamos todos o conteúdo */
 body {
-  font-family: sans-serif, Arial, sans-serif;
+  font-family: sans-serif, Arial;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #fff1da;
 }
 
 /* Aqui é o fundo da página */
@@ -28,15 +29,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /*display: none;*/      /* << Aqui está a função que faz com que o pop-up fique escondido */
+  display: none;      /* << Aqui está a função que faz com que o pop-up fique escondido */
 }
 
 /* pop-up */
 .popup-content {
   background: white;
   padding: 50px;
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
   border-radius: 10px;
   text-align: center;
 }
@@ -49,18 +50,46 @@ body {
 }
 
 /* Aqui fica as partes dos botões */
+/* Botão de abrir o pop-up */
+#AbrirPopupBtn {
+font-size: 40px
+}
+
+/* Botão de iniciar jogo */
 button {
-  background-color: rgb(11, 198, 11);
+  background: rgb(214, 152, 9);
   padding: 12px 24px;
   font-size: 16px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #ffffff
 }
 
 button:hover {
-  background-color: #4CAF50;
+  background-color: rgb(232, 143, 0);
   transform: scale(1.05);
 }
 
+/* Botão de close */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#closePopupBtn  {
+  background: transparent;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#closePopupBtn:hover {
+  color: red;
+}
