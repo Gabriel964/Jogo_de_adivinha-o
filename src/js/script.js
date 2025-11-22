@@ -15,3 +15,11 @@ popup.addEventListener("click", () => {
         popup.style.display = "none";
     }
 });
+
+document.getElementById("iniciarJogo").addEventListener("click", function() {
+    window.location.href = "jogo.html";
+});
+
+document.getElementById("btnAdivinhar").addEventListener("click", function() {
+    const numeto = document.getElementById("entradaNumero").value;
+})
